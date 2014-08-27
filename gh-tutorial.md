@@ -26,3 +26,9 @@ file.create(".nojekyll")
 ```
 
 6. Сделать коммит.
+
+
+```r
+git push origin gh-pages
+```
+
