@@ -32,3 +32,4 @@ file.create(".nojekyll")
 git push origin gh-pages
 ```
 
+7. Пробуем.
