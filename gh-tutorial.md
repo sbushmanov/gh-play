@@ -32,4 +32,12 @@ file.create(".nojekyll")
 git push origin gh-pages
 ```
 
-7. Пробуем.
+7. Добавить в  "./.git/config"
+
+
+```r
+[branch "gh-pages"]
+        remote = origin
+	merge = refs/heads/gh-pages
+```
+
