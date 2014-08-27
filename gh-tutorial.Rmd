@@ -35,8 +35,21 @@ git push origin gh-pages
 7. Добавить в  "./.git/config"
 
 ```{r}
+[core]
+        repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:sbushmanov/gh-play.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+# начало добавить
 [branch "gh-pages"]
-        remote = origin
+	remote = origin
 	merge = refs/heads/gh-pages
+# конец добавить
 ```
 
