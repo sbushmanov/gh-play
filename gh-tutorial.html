@@ -231,9 +231,22 @@ hr {
 <li>Добавить в  &ldquo;./.git/config&rdquo;</li>
 </ol>
 
-<pre><code class="r">[branch &quot;gh-pages&quot;]
-        remote = origin
+<pre><code class="r">[core]
+        repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+[remote &quot;origin&quot;]
+    url = git@github.com:sbushmanov/gh-play.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+# начало добавить
+[branch &quot;gh-pages&quot;]
+    remote = origin
     merge = refs/heads/gh-pages
+# конец добавить
 </code></pre>
 
 </body>
